@@ -18,7 +18,7 @@ pipeline {
         }
         stage ('Run Docker Compose') {
             steps {
-                // Run Docker Compose
+                // Run Docker Compose using the full path
                 sh '/home/jenkins/docker-compose up -d'
             }
         }
