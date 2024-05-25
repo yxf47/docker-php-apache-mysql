@@ -6,6 +6,7 @@ pipeline {
             steps {
                 script {
                     sh '''
+                        mkdir -p /home/jenkins/
                         curl -L https://github.com/docker/compose/releases/download/2.27.1/docker-compose-Linux-x86_64 -o docker-compose
                         chmod +x docker-compose
                         mv docker-compose /home/jenkins/
